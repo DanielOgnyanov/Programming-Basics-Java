@@ -11,20 +11,17 @@ public class SuitcasesLoad__05 {
         double sum = 0;
 
 
-
         int counterCase = 0;
         int counterAcc = 0;
 
 
-
-        while (!command.equals("End")){
+        while (!command.equals("End")) {
 
             double currentBag = Double.parseDouble(command);
-            counterAcc ++;
+            counterAcc++;
 
 
-
-            if(counterAcc % 3 == 0){
+            if (counterAcc % 3 == 0) {
 
                 currentBag = (currentBag / 100 * 10) + currentBag;
 
@@ -32,7 +29,7 @@ public class SuitcasesLoad__05 {
             }
 
 
-            if(capacity < currentBag){
+            if (capacity < currentBag) {
                 System.out.printf("No more space!");
                 System.out.println();
                 System.out.printf("Statistic: %d suitcases loaded.", counterCase);
@@ -41,14 +38,13 @@ public class SuitcasesLoad__05 {
             }
 
 
-
             capacity -= currentBag;
             counterCase++;
             command = scanner.nextLine();
 
         }
 
-        if(command.equals("End")){
+        if (command.equals("End")) {
             System.out.printf("Congratulations! All suitcases are loaded!");
             System.out.println();
             System.out.printf("Statistic: %d suitcases loaded.", counterCase);
