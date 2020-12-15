@@ -10,8 +10,7 @@ public class FootballResults__02 {
 
         for (int i = 0; i < 3; i++) {
             var currentLine = scanner.nextLine().toCharArray();
-            // Java has var keyword to declare variables,
-            // which allows you to declare a variable without their type
+            
             int first = currentLine[0];
             int last = currentLine[2];
 
